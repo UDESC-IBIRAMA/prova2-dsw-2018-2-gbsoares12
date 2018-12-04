@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Requerido.css">
+        <script src="script.js"></script>
+
+    </head>
+    <body>
+        <div id="divCadastro">
+            <fieldset>
+                <legend>Cadastro Livro</legend>
+                <form>
+                    <table>
+                        <tr>
+                            <td>
+                                <label class="campoRequerido">Isbn:</label><input id="sIsbn" type="text" required />
+                            </td>
+                            <td>
+                                <label class="campoRequerido">Título:</label><input id="sTitulo" type="text" required/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="campoRequerido">Autor:</label><input id="sAutor" type="text" required/>
+                            </td>
+                            <td>
+                                <label>Editora:</label><input id="sEditora" type="text"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Ano:</label><input id="iAno" type="number"/>
+                            </td>
+                            <td>
+                                <label>Quantidade:</label><input id="iQuantidade" type="number"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button onclick="salvarLivro()" type="submit">Salvar</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <button onclick="exibirResultado()" type="submit">Resultados</button>
+            </fieldset>
+        </div>
+        <div id="resultadosCampo">
+            
+        </div>
+    </body>
+</html>
